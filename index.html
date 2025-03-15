@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Kipkoech Langat - Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f8f9fa; scroll-behavior: smooth; }
+        .hero { background: #343a40; color: white; padding: 80px 0; text-align: center; }
+        .hero img { width: 150px; height: 150px; border-radius: 50%; margin-bottom: 20px; }
+        .section { padding: 60px 0; }
+        .project-card { margin-bottom: 20px; transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+        .project-card:hover { transform: scale(1.05); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); }
+        .contact-form input, .contact-form textarea { margin-bottom: 10px; }
+        .navbar { position: sticky; top: 0; width: 100%; z-index: 1000; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Victor Kipkoech Langat</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="hero animate__animated animate__fadeInDown">
+        <div class="container">
+            <img src="profile.jpg" alt="Victor Kipkoech Langat">
+            <h1>Victor Kipkoech Langat</h1>
+            <p>BSc IT Expert - Kibabii University</p>
+            <a href="resume.pdf" class="btn btn-primary mt-3" download>Download Resume</a>
+        </div>
+    </header>
+    
+    <section id="about" class="section animate__animated animate__fadeInUp">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a skilled IT expert with experience in web development, Linux, network administration, and more.</p>
+        </div>
+    </section>
+    
+    <section id="skills" class="section bg-light animate__animated animate__fadeInUp">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>Linux</li>
+                <li>Network Administration</li>
+                <li>Software & Hardware Repair</li>
+                <li>Microsoft Word, PowerPoint, Excel</li>
+                <li>Desktop App Development</li>
+                <li>Windows 7, 8, 10, 11</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="projects" class="section animate__animated animate__fadeInUp">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Bomet Bible College Website</h5>
+                            <p class="card-text">An informational website for Bomet Bible College with course details and admissions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Bomet Bible School Library System</h5>
+                            <p class="card-text">A web-based library system developed using ASP.NET for efficient book management.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Portfolio Website</h5>
+                            <p class="card-text">A personal portfolio website showcasing my skills and projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="section animate__animated animate__fadeInUp">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form class="contact-form" id="contact-form">
+                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary mt-2">Send Message</button>
+                <p id="form-status" class="mt-2"></p>
+            </form>
+        </div>
+    </section>
+    
+    <footer class="bg-dark text-white text-center py-3">
+        &copy; 2025 Victor Kipkoech Langat. All rights reserved.
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
